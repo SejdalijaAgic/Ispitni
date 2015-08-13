@@ -23,13 +23,7 @@ struct Pitanje {
 	Datum _datumKreiranja;
 	int _brojPitanja;
 
-	/*IMPLEMENTIRATI SLJEDEĆE FUNKCIJE:
-	1.Unos:: na osnovu vrijednosti primljenih parametara, inicijalizovati vrijednosti atributa strukture
-	2.AddOdgovor:: dodaje novi odgovor u listu ponudjenih odgovora. Voditi racuna da novi odgovor moze biti tacan
-	3.RemoveOdgovor:: na osnovu primljene lokacije u nizu uklanja podatke o ponudjenom odgovoru.Prilikom uklanjanja ocuvati redoslijed dodavanja odgovora.
-	Uklanjanje tacnog odgovora zahtijeva odabir novog tacnog dogovora osim u slucaju da se uklanja posljednji ponudjeni odgovor */
-
-
+	
 
 	void Unos(char *tekst, char *odgovori[], int tacan, int broj_odgovora, int bodova, Datum d) {
 
@@ -206,12 +200,7 @@ struct PrijemniIspit {
 	//prag prolaznosti na prijemnom ispitu npr. 60 procenata
 	int _pragProlaznosti;
 	
-	/*IMPLEMENTIRATI SLJEDEĆE FUNKCIJE:
-	1.Unos::na osnovu vrijednosti primljenih parametara, inicijalizovati vrijednosti atributa strukture
-	2.DodajKandidata::dodaje novog kandidata za polaganje prijemnog ispita. Onemoguciti dodavanje dva ista kandidata
-	3.PokreniIspit::na osnovu primljenih parametara (JMBG kandidata i niz pitanja) funkcija pokrece prijemni ispit i kandidatu omogucava unos odgovora na postavljena pitanja. 
-	Na kraju izvrsenja funkcije potrebno je informisati kandidata o tome da li je polozio prijemni ispit ili ne
-	*/
+	
 
 
 	void Unos(Datum obj, int prag) {
@@ -236,12 +225,7 @@ struct PrijemniIspit {
 	}
 
 
-	/*
-	
-	3. DodajPitanje :: dodaje novo pitanje kandidatu sa vrijednoscu JMBG-a koji je proslijedjen kao parametar. 
-	Datum kreiranja novog pitanja ne smije biti manji od datuma odrzavanja prijemnog ispita
-	
-	*/
+
 
 	
 	void PokreniIspit(char *JMBG, Pitanje *obj, int brojPitanja) {
@@ -292,10 +276,7 @@ struct PrijemniIspit {
 	}
 };
 int main() {
-	/*
-	1. provjeriti validnost izvrsenja svih dostupnih funkcionalnosti.
-	2. izbjegavajte koristenje vlastitog imena i prezimena
-	*/
+	
 
 
 	Datum obj;
